@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/osboxes/wi4771tu.2017/WI4771_Final/src/heatEqnSolver.cxx
+iostream
+-
+initializer_list
+-
+memory
+-
+complex
+-
+
