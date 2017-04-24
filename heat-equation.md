@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="Final-project/heat-equation.md · master · Matthias Möller / wi4771tu.2017" property="og:title">
+<meta content="GitLab.com" property="og:description">
+<meta content="https://gitlab.com/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="og:image">
+<meta content="https://gitlab.com/mmoelle1/wi4771tu.2017/blob/master/Final-project/heat-equation.md" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="Final-project/heat-equation.md · master · Matthias Möller / wi4771tu.2017" property="twitter:title">
+<meta content="GitLab.com" property="twitter:description">
+<meta content="https://gitlab.com/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="twitter:image">
+
+<title>Final-project/heat-equation.md · master · Matthias Möller / wi4771tu.2017 · GitLab</title>
+<meta content="GitLab.com" name="description">
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-075eba76312e8421991a0c1f89a89ee81678bcde72319dd3e8047e2a47cd3a42.ico" id="favicon" />
+<link rel="stylesheet" media="all" href="/assets/application-8ab51593afe57c1fa69bdc0b6a299945f93f2b4eafecb4665f8928da7f11bd11.css" />
+<link rel="stylesheet" media="print" href="/assets/print-87bb95ae825e1039facb71c62197dad696049012bb8cfeb76bb57c3a4aa865a6.css" />
+<script src="/assets/webpack/runtime.67510af504bf1d6d82ae.bundle.js"></script>
+<script src="/assets/webpack/common.d2d569cadec1a36fd6c9.bundle.js"></script>
+<script src="/assets/webpack/main.95e755b953a7aa36fb2d.bundle.js"></script>
+<script>
+  window.project_uploads_path = "/mmoelle1/wi4771tu.2017/uploads";
+  window.preview_markdown_path = "/mmoelle1/wi4771tu.2017/preview_markdown";
+</script>
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="9ByfM0rGbUCGiYfIF3fghr0fLNt+iNwjc+zUf+M5vBJ7B2pgv7kUvZ20q05OHPEqm5QVwKKgYdQh4NAMgqB6/Q==" />
+<meta content="origin-when-cross-origin" name="referrer">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<meta content="#474D57" name="theme-color">
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-iphone-5a9cee0e8a51212e70b90c87c12f382c428870c0ff67d1eb034d884b78d2dae7.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-ipad-a6eec6aeb9da138e507593b464fdac213047e49d3093fc30e90d9a995df83ba3.png" sizes="76x76" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-iphone-retina-72e2aadf86513a56e050e7f0f2355deaa19cc17ed97bbe5147847f2748e5a3e3.png" sizes="120x120" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-ipad-retina-8ebe416f5313483d9c1bc772b5bbe03ecad52a54eba443e5215a22caed2a16a2.png" sizes="152x152" />
+<link color="rgb(226, 67, 41)" href="/assets/logo-d36b5212042cebc89b96df4bf6ac24e43db316143e89926c0db839ff694d2de4.svg" rel="mask-icon">
+<meta content="/assets/msapplication-tile-1196ec67452f618d39cdd85e2e3a542f76574c071051ae7effbfde01710eb17d.png" name="msapplication-TileImage">
+<meta content="#30353E" name="msapplication-TileColor">
+
+
+<!-- Piwik -->
+<script>
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.gitlab.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.gitlab.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+
+</head>
+
+<body class="" data-group="" data-page="projects:blob:show" data-project="wi4771tu.2017">
+<script>
+//<![CDATA[
+window.gon={};gon.api_version="v4";gon.default_avatar_url="https:\/\/gitlab.com\/assets\/no_avatar-849f9c04a3a0d0cea2424ae97b27447dc64a7dbfae83c036c45b403392f0e8ba.png";gon.max_file_size=10;gon.asset_host=null;gon.relative_url_root="";gon.shortcuts_path="\/help\/shortcuts";gon.user_color_scheme="white";gon.katex_css_url="\/assets\/katex-e46cafe9c3fa73920a7c2c063ee8bb0613e0cf85fd96a3aea25f8419c4bfcfba.css";gon.katex_js_url="\/assets\/katex-04bcf56379fcda0ee7c7a63f71d0fc15ffd2e014d017cd9d51fd6554dfccf40a.js";gon.current_user_id=1114218;gon.current_username="prince-ph0en1x";gon.current_user_fullname="Aritra";
+//]]>
+</script>
+<header class="navbar navbar-gitlab with-horizontal-nav">
+<a class="sr-only gl-accessibility" href="#content-body" tabindex="1">Skip to content</a>
+<div class="container-fluid">
+<div class="header-content">
+<div class="dropdown global-dropdown">
+<button class="global-dropdown-toggle" data-toggle="dropdown" type="button">
+<span class="sr-only">Toggle navigation</span>
+<i class="fa fa-bars"></i>
+</button>
+<div class="dropdown-menu-nav global-dropdown-menu">
+<ul>
+<li class="active home"><a title="Projects" class="dashboard-shortcuts-projects" href="/dashboard/projects"><div class="shortcut-mappings">
+<div class="key">
+<i aria-label="hidden" class="fa fa-arrow-up"></i>
+P
+</div>
+</div>
+<span>
+Projects
+</span>
+</a></li><li class=""><a class="dashboard-shortcuts-activity" title="Activity" href="/dashboard/activity"><div class="shortcut-mappings">
+<div class="key">
+<i aria-label="hidden" class="fa fa-arrow-up"></i>
+A
+</div>
+</div>
+<span>
+Activity
+</span>
+</a></li><li class=""><a class="dashboard-shortcuts-groups" title="Groups" href="/dashboard/groups"><div class="shortcut-mappings">
+<div class="key">
+<i aria-label="hidden" class="fa fa-arrow-up"></i>
+G
+</div>
+</div>
+<span>
+Groups
+</span>
+</a></li><li class=""><a class="dashboard-shortcuts-milestones" title="Milestones" href="/dashboard/milestones"><div class="shortcut-mappings">
+<div class="key">
+<i aria-label="hidden" class="fa fa-arrow-up"></i>
+L
+</div>
+</div>
+<span>
+Milestones
+</span>
+</a></li><li class=""><a title="Issues" class="dashboard-shortcuts-issues" href="/dashboard/issues?assignee_id=1114218"><div class="shortcut-mappings">
+<div class="key">
+<i aria-label="hidden" class="fa fa-arrow-up"></i>
+I
+</div>
+</div>
+<span>
+Issues
+</span>
+<div class="badge">0</div>
+</a></li><li class=""><a title="Merge Requests" class="dashboard-shortcuts-merge_requests" href="/dashboard/merge_requests?assignee_id=1114218"><div class="shortcut-mappings">
+<div class="key">
+<i aria-label="hidden" class="fa fa-arrow-up"></i>
+M
+</div>
+</div>
+<span>
+Merge Requests
+</span>
+<div class="badge">0</div>
+</a></li><li class=""><a class="dashboard-shortcuts-snippets" title="Snippets" href="/dashboard/snippets"><div class="shortcut-mappings">
+<div class="key">
+<i aria-label="hidden" class="fa fa-arrow-up"></i>
+S
+</div>
+</div>
+<span>
+Snippets
+</span>
+</a></li><li class="divider"></li>
+<li>
+<a title="About GitLab EE" class="about-gitlab" href="/help">Help</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="header-logo">
+<a class="home" title="Dashboard" id="logo" href="/"><svg width="28" height="28" class="tanuki-logo" viewBox="0 0 36 36">
+  <path class="tanuki-shape tanuki-left-ear" fill="#e24329" d="M2 14l9.38 9v-9l-4-12.28c-.205-.632-1.176-.632-1.38 0z"/>
+  <path class="tanuki-shape tanuki-right-ear" fill="#e24329" d="M34 14l-9.38 9v-9l4-12.28c.205-.632 1.176-.632 1.38 0z"/>
+  <path class="tanuki-shape tanuki-nose" fill="#e24329" d="M18,34.38 3,14 33,14 Z"/>
+  <path class="tanuki-shape tanuki-left-eye" fill="#fc6d26" d="M18,34.38 11.38,14 2,14 6,25Z"/>
+  <path class="tanuki-shape tanuki-right-eye" fill="#fc6d26" d="M18,34.38 24.62,14 34,14 30,25Z"/>
+  <path class="tanuki-shape tanuki-left-cheek" fill="#fca326" d="M2 14L.1 20.16c-.18.565 0 1.2.5 1.56l17.42 12.66z"/>
+  <path class="tanuki-shape tanuki-right-cheek" fill="#fca326" d="M34 14l1.9 6.16c.18.565 0 1.2-.5 1.56L18 34.38z"/>
+</svg>
+
+</a></div>
+<div class="title-container">
+<h1 class="title"><a href="/mmoelle1">Matthias Möller</a> / <a class="project-item-select-holder" href="/mmoelle1/wi4771tu.2017">wi4771tu.2017</a><button name="button" type="button" class="dropdown-toggle-caret js-projects-dropdown-toggle" aria-label="Toggle switch project dropdown" data-target=".js-dropdown-menu-projects" data-toggle="dropdown" data-order-by="last_activity_at"><i class="fa fa-chevron-down"></i></button></h1>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="hidden-sm hidden-xs">
+<div class="has-location-badge search search-form">
+<form class="navbar-form" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><div class="search-input-container">
+<div class="location-badge">This project</div>
+<div class="search-input-wrap">
+<div class="dropdown" data-url="/search/autocomplete">
+<input type="search" name="search" id="search" placeholder="Search" class="search-input dropdown-menu-toggle no-outline js-search-dashboard-options" spellcheck="false" tabindex="1" autocomplete="off" data-toggle="dropdown" data-issues-path="https://gitlab.com/dashboard/issues" data-mr-path="https://gitlab.com/dashboard/merge_requests" />
+<div class="dropdown-menu dropdown-select">
+<div class="dropdown-content"><ul>
+<li>
+<a class="is-focused dropdown-menu-empty-link">
+Loading...
+</a>
+</li>
+</ul>
+</div><div class="dropdown-loading"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+<i class="search-icon"></i>
+<i class="clear-icon js-clear-input"></i>
+</div>
+</div>
+</div>
+<input type="hidden" name="group_id" id="group_id" class="js-search-group-options" />
+<input type="hidden" name="project_id" id="search_project_id" value="2689564" class="js-search-project-options" data-project-path="wi4771tu.2017" data-name="wi4771tu.2017" data-issues-path="/mmoelle1/wi4771tu.2017/issues" data-mr-path="/mmoelle1/wi4771tu.2017/merge_requests" />
+<input type="hidden" name="search_code" id="search_code" value="true" />
+<input type="hidden" name="repository_ref" id="repository_ref" value="master" />
+
+<div class="search-autocomplete-opts hide" data-autocomplete-path="/search/autocomplete" data-autocomplete-project-id="2689564" data-autocomplete-project-ref="master"></div>
+</form></div>
+
+</li>
+<li class="visible-sm-inline-block visible-xs-inline-block">
+<a title="Search" aria-label="Search" data-toggle="tooltip" data-placement="bottom" data-container="body" href="/search"><i class="fa fa-search"></i>
+</a></li>
+<li>
+<a title="New project" aria-label="New project" data-toggle="tooltip" data-placement="bottom" data-container="body" href="/projects/new"><i class="fa fa-plus fa-fw"></i>
+</a></li>
+<li>
+<a title="Issues" aria-label="Issues" data-toggle="tooltip" data-placement="bottom" data-container="body" href="/dashboard/issues?assignee_id=1114218"><i class="fa fa-hashtag fa-fw"></i>
+<span class="badge hidden issues-count">
+0
+</span>
+</a></li>
+<li>
+<a title="Merge requests" aria-label="Merge requests" data-toggle="tooltip" data-placement="bottom" data-container="body" href="/dashboard/merge_requests?assignee_id=1114218"><svg width="15" height="20" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.967a2.15 2.15 0 1 1 2.3 0v5.066a2.15 2.15 0 1 1-2.3 0V4.967zm7.85 5.17V5.496c0-.745-.603-1.346-1.35-1.346V6l-3-3 3-3v1.85c2.016 0 3.65 1.63 3.65 3.646v4.45a2.15 2.15 0 1 1-2.3.191z" fill-rule="nonzero"/></svg>
+
+<span class="badge hidden merge-requests-count">
+0
+</span>
+</a></li>
+<li>
+<a title="Todos" aria-label="Todos" class="shortcuts-todos" data-toggle="tooltip" data-placement="bottom" data-container="body" href="/dashboard/todos"><i class="fa fa-check-circle fa-fw"></i>
+<span class="badge hidden todos-count">
+0
+</span>
+</a></li>
+<li class="header-user dropdown">
+<a class="header-user-dropdown-toggle" data-toggle="dropdown" href="/prince-ph0en1x"><img width="26" height="26" class="header-user-avatar" src="https://secure.gravatar.com/avatar/316abe6c45a2d3b30ea701eecb10a9c4?s=52&amp;d=identicon" alt="316abe6c45a2d3b30ea701eecb10a9c4?s=52&amp;d=identicon" />
+<i class="fa fa-caret-down"></i>
+</a><div class="dropdown-menu-nav dropdown-menu-align-right">
+<ul>
+<li>
+<a class="profile-link" aria-label="Profile" data-user="prince-ph0en1x" href="/prince-ph0en1x">Profile</a>
+</li>
+<li>
+<a aria-label="Settings" href="/profile">Settings</a>
+</li>
+<li class="divider"></li>
+<li>
+<a class="sign-out-link" aria-label="Sign out" rel="nofollow" data-method="delete" href="/users/sign_out">Sign out</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle" type="button">
+<span class="sr-only">Toggle navigation</span>
+<i class="fa fa-ellipsis-v"></i>
+</button>
+<div class="js-dropdown-menu-projects">
+<div class="dropdown-menu dropdown-select dropdown-menu-projects">
+<div class="dropdown-title"><span>Go to a project</span><button class="dropdown-title-button dropdown-menu-close" aria-label="Close" type="button"><i class="fa fa-times dropdown-menu-close-icon"></i></button></div>
+<div class="dropdown-input"><input type="search" id="" class="dropdown-input-field" placeholder="Search your projects" autocomplete="off" /><i class="fa fa-search dropdown-input-search"></i><i role="button" class="fa fa-times dropdown-input-clear js-dropdown-input-clear"></i></div>
+<div class="dropdown-content"></div>
+<div class="dropdown-loading"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+</div>
+
+</div>
+</div>
+</header>
+
+<script>
+  var findFileURL = "/mmoelle1/wi4771tu.2017/find_file/master";
+</script>
+
+<div class="page-with-sidebar">
+<div class="layout-nav">
+<div class="container-fluid">
+<div class="nav-control scrolling-tabs-container">
+<div class="fade-left">
+<i class="fa fa-angle-left"></i>
+</div>
+<div class="fade-right">
+<i class="fa fa-angle-right"></i>
+</div>
+<ul class="nav-links scrolling-tabs">
+<li class="home"><a title="Project" class="shortcuts-project" href="/mmoelle1/wi4771tu.2017"><span>
+Project
+</span>
+</a></li><li class="active"><a title="Repository" class="shortcuts-tree" href="/mmoelle1/wi4771tu.2017/tree/master"><span>
+Repository
+</span>
+</a></li><li class=""><a title="Container Registry" class="shortcuts-container-registry" href="/mmoelle1/wi4771tu.2017/container_registry"><span>
+Registry
+</span>
+</a></li><li class=""><a title="Settings" class="shortcuts-tree" href="/mmoelle1/wi4771tu.2017/settings/members"><span>
+Settings
+</span>
+</a></li><li class="hidden">
+<a title="Activity" class="shortcuts-project-activity" href="/mmoelle1/wi4771tu.2017/activity"><span>
+Activity
+</span>
+</a></li>
+<li class="hidden">
+<a title="Network" class="shortcuts-network" href="/mmoelle1/wi4771tu.2017/network/master">Graph
+</a></li>
+<li class="hidden">
+<a title="Charts" class="shortcuts-repository-charts" href="/mmoelle1/wi4771tu.2017/graphs/master/charts">Charts
+</a></li>
+<li class="hidden">
+<a class="shortcuts-new-issue" href="/mmoelle1/wi4771tu.2017/issues/new">Create a new issue
+</a></li>
+<li class="hidden">
+<a title="Commits" class="shortcuts-commits" href="/mmoelle1/wi4771tu.2017/commits/master">Commits
+</a></li>
+<li class="hidden">
+<a title="Issue Boards" class="shortcuts-issue-boards" href="/mmoelle1/wi4771tu.2017/boards">Issue Boards</a>
+</li>
+</ul>
+</div>
+
+</div>
+</div>
+<div class="scrolling-tabs-container sub-nav-scroll">
+<div class="fade-left">
+<i class="fa fa-angle-left"></i>
+</div>
+<div class="fade-right">
+<i class="fa fa-angle-right"></i>
+</div>
+
+<div class="nav-links sub-nav scrolling-tabs">
+<ul class="container-fluid container-limited">
+<li class="active"><a href="/mmoelle1/wi4771tu.2017/tree/master">Files
+</a></li><li class=""><a href="/mmoelle1/wi4771tu.2017/commits/master">Commits
+</a></li><li class=""><a href="/mmoelle1/wi4771tu.2017/branches">Branches
+</a></li><li class=""><a href="/mmoelle1/wi4771tu.2017/tags">Tags
+</a></li><li class=""><a href="/mmoelle1/wi4771tu.2017/graphs/master">Contributors
+</a></li><li class=""><a href="/mmoelle1/wi4771tu.2017/network/master">Graph
+</a></li><li class=""><a href="/mmoelle1/wi4771tu.2017/compare?from=master&amp;to=master">Compare
+</a></li><li class=""><a href="/mmoelle1/wi4771tu.2017/graphs/master/charts">Charts
+</a></li><li class=""><a href="/mmoelle1/wi4771tu.2017/path_locks">Locked Files
+</a></li></ul>
+</div>
+</div>
+
+<div class="content-wrapper page-with-layout-nav page-with-sub-nav">
+<div class="alert-wrapper">
+
+
+<div class="flash-container flash-container-page">
+</div>
+
+
+</div>
+<div class=" ">
+<div class="content" id="content-body">
+
+<div class="container-fluid container-limited">
+
+<div class="tree-holder" id="tree-holder">
+<div class="nav-block">
+<div class="tree-ref-holder">
+<form class="project-refs-form" action="/mmoelle1/wi4771tu.2017/refs/switch" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="destination" id="destination" value="blob" />
+<input type="hidden" name="path" id="path" value="Final-project/heat-equation.md" />
+<div class="dropdown">
+<button class="dropdown-menu-toggle js-project-refs-dropdown" type="button" data-toggle="dropdown" data-selected="master" data-ref="master" data-refs-url="/mmoelle1/wi4771tu.2017/refs" data-field-name="ref" data-submit-form-on-click="true"><span class="dropdown-toggle-text ">master</span><i class="fa fa-chevron-down"></i></button>
+<div class="dropdown-menu dropdown-menu-selectable">
+<div class="dropdown-title"><span>Switch branch/tag</span><button class="dropdown-title-button dropdown-menu-close" aria-label="Close" type="button"><i class="fa fa-times dropdown-menu-close-icon"></i></button></div>
+<div class="dropdown-input"><input type="search" id="" class="dropdown-input-field" placeholder="Search branches and tags" autocomplete="off" /><i class="fa fa-search dropdown-input-search"></i><i role="button" class="fa fa-times dropdown-input-clear js-dropdown-input-clear"></i></div>
+<div class="dropdown-content"></div>
+<div class="dropdown-loading"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+</div>
+</form>
+</div>
+<ul class="breadcrumb repo-breadcrumb">
+<li>
+<a href="/mmoelle1/wi4771tu.2017/tree/master">wi4771tu.2017
+</a></li>
+<li>
+<a href="/mmoelle1/wi4771tu.2017/tree/master/Final-project">Final-project</a>
+
+</li>
+<li>
+<a href="/mmoelle1/wi4771tu.2017/blob/master/Final-project/heat-equation.md"><strong>
+heat-equation.md
+</strong>
+</a>
+</li>
+</ul>
+</div>
+<ul class="blob-commit-info hidden-xs">
+<li class="commit flex-list js-toggle-container" id="commit-14b38d25">
+<div class="avatar-cell hidden-xs">
+<a href="/mmoelle1"><img class="avatar has-tooltip s36 hidden-xs" alt="Matthias Möller&#39;s avatar" title="Matthias Möller" data-container="body" src="https://gitlab.com/uploads/user/avatar/115459/avatar.png" /></a>
+</div>
+<div class="commit-detail">
+<div class="commit-content">
+<a class="commit-row-message item-title" href="/mmoelle1/wi4771tu.2017/commit/14b38d2543506938f2992f94ab43d213c52a5414">Update heat-equation.md</a>
+<span class="commit-row-message visible-xs-inline">
+&middot;
+14b38d25
+</span>
+<div class="visible-xs-inline">
+<a class="ci-status-link ci-status-icon-success " title="Commit: passed" data-toggle="tooltip" data-placement="auto left" data-container="body" href="/mmoelle1/wi4771tu.2017/commit/14b38d2543506938f2992f94ab43d213c52a5414/pipelines"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="M0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7z"/><path d="M13 7A6 6 0 1 0 1 7a6 6 0 0 0 12 0z" fill="#FFF"/><path d="M6.278 7.697L5.045 6.464a.296.296 0 0 0-.42-.002l-.613.614a.298.298 0 0 0 .002.42l1.91 1.909a.5.5 0 0 0 .703.005l.265-.265L9.997 6.04a.291.291 0 0 0-.009-.408l-.614-.614a.29.29 0 0 0-.408-.009L6.278 7.697z"/></g></svg>
+</a>
+</div>
+<div class="commiter">
+<a class="commit-author-link has-tooltip" title="mmoelle1@gmail.com" href="/mmoelle1">Matthias Möller</a>
+committed
+<time class="js-timeago" title="Mar 29, 2017 8:51am" datetime="2017-03-29T08:51:54Z" data-toggle="tooltip" data-placement="top" data-container="body">Mar 29, 2017</time>
+</div>
+</div>
+<div class="commit-actions flex-row hidden-xs">
+<a class="ci-status-link ci-status-icon-success " title="Commit: passed" data-toggle="tooltip" data-placement="auto left" data-container="body" href="/mmoelle1/wi4771tu.2017/commit/14b38d2543506938f2992f94ab43d213c52a5414/pipelines"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="M0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7z"/><path d="M13 7A6 6 0 1 0 1 7a6 6 0 0 0 12 0z" fill="#FFF"/><path d="M6.278 7.697L5.045 6.464a.296.296 0 0 0-.42-.002l-.613.614a.298.298 0 0 0 .002.42l1.91 1.909a.5.5 0 0 0 .703.005l.265-.265L9.997 6.04a.291.291 0 0 0-.009-.408l-.614-.614a.29.29 0 0 0-.408-.009L6.278 7.697z"/></g></svg>
+</a>
+<button class="btn btn-clipboard btn-transparent" data-toggle="tooltip" data-placement="bottom" data-container="body" data-title="Copy commit SHA to clipboard" data-clipboard-text="14b38d2543506938f2992f94ab43d213c52a5414" type="button" title="Copy commit SHA to clipboard"><i aria-hidden="true" class="fa fa-clipboard"></i></button>
+<a class="commit-short-id btn btn-transparent" href="/mmoelle1/wi4771tu.2017/commit/14b38d2543506938f2992f94ab43d213c52a5414">14b38d25</a>
+
+</div>
+</div>
+</li>
+
+</ul>
+<div class="blob-content-holder" id="blob-content-holder">
+<article class="file-holder">
+<div class="js-file-title file-title-flex-parent">
+<div class="file-header-content">
+<i class="fa fa-file-text-o fa-fw"></i>
+<strong class="file-title-name">
+heat-equation.md
+</strong>
+<button class="btn btn-clipboard btn-transparent prepend-left-5" data-toggle="tooltip" data-placement="bottom" data-container="body" data-class="btn-clipboard btn-transparent prepend-left-5" data-title="Copy file path to clipboard" data-clipboard-text="{&quot;text&quot;:&quot;Final-project/heat-equation.md&quot;,&quot;gfm&quot;:&quot;`Final-project/heat-equation.md`&quot;}" type="button" title="Copy file path to clipboard"><i aria-hidden="true" class="fa fa-clipboard"></i></button>
+<small>
+11 KB
+</small>
+</div>
+<div class="file-actions hidden-xs">
+<div class="btn-group" role="group"><a class="btn btn-sm has-tooltip" target="_blank" rel="noopener noreferrer" title="Open raw" data-container="body" href="/mmoelle1/wi4771tu.2017/raw/master/Final-project/heat-equation.md"><i class="fa fa-file-code-o"></i></a></div>
+<div class="btn-group" role="group"><a class="btn btn-sm js-blob-blame-link" href="/mmoelle1/wi4771tu.2017/blame/master/Final-project/heat-equation.md">Blame</a><a class="btn btn-sm" href="/mmoelle1/wi4771tu.2017/commits/master/Final-project/heat-equation.md">History</a><a class="btn btn-sm js-data-file-blob-permalink-url" href="/mmoelle1/wi4771tu.2017/blob/a8f9619d695be0a029ddfc6d78f48aa4c5a8d0d5/Final-project/heat-equation.md">Permalink</a></div>
+<div class="btn-group" role="group"><span class="btn btn-sm path-lock disabled has-tooltip" data-toggle="tooltip" title="You do not have permission to lock this">Lock</span><button name="button" type="submit" class="btn js-edit-blob  js-edit-blob-link-fork-toggler">Edit</button><a class="btn btn-default" rel="nofollow" data-method="post" href="/mmoelle1/wi4771tu.2017/forks?continue%5Bnotice%5D=You%27re+not+allowed+to+make+changes+to+this+project+directly.+A+fork+of+this+project+has+been+created+that+you+can+make+changes+in%2C+so+you+can+submit+a+merge+request.+Try+to+replace+this+file+again.&amp;continue%5Bnotice_now%5D=You%27re+not+allowed+to+make+changes+to+this+project+directly.+A+fork+of+this+project+is+being+created+that+you+can+make+changes+in%2C+so+you+can+submit+a+merge+request.&amp;continue%5Bto%5D=%2Fmmoelle1%2Fwi4771tu.2017%2Fblob%2Fmaster%2FFinal-project%2Fheat-equation.md&amp;namespace_key=1323269">Replace</a><a class="btn btn-remove" rel="nofollow" data-method="post" href="/mmoelle1/wi4771tu.2017/forks?continue%5Bnotice%5D=You%27re+not+allowed+to+make+changes+to+this+project+directly.+A+fork+of+this+project+has+been+created+that+you+can+make+changes+in%2C+so+you+can+submit+a+merge+request.+Try+to+delete+this+file+again.&amp;continue%5Bnotice_now%5D=You%27re+not+allowed+to+make+changes+to+this+project+directly.+A+fork+of+this+project+is+being+created+that+you+can+make+changes+in%2C+so+you+can+submit+a+merge+request.&amp;continue%5Bto%5D=%2Fmmoelle1%2Fwi4771tu.2017%2Fblob%2Fmaster%2FFinal-project%2Fheat-equation.md&amp;namespace_key=1323269">Delete</a></div>
+</div>
+</div>
+<div class="js-file-fork-suggestion-section file-fork-suggestion hidden">
+<span class="file-fork-suggestion-note">
+You don't have permission to edit this file. Try forking this project to edit the file.
+</span>
+<a class="btn btn-grouped btn-inverted btn-new" rel="nofollow" data-method="post" href="/mmoelle1/wi4771tu.2017/forks?continue%5Bnotice%5D=You%27re+not+allowed+to+make+changes+to+this+project+directly.+A+fork+of+this+project+has+been+created+that+you+can+make+changes+in%2C+so+you+can+submit+a+merge+request.&amp;continue%5Bnotice_now%5D=You%27re+not+allowed+to+make+changes+to+this+project+directly.+A+fork+of+this+project+is+being+created+that+you+can+make+changes+in%2C+so+you+can+submit+a+merge+request.&amp;continue%5Bto%5D=%2Fmmoelle1%2Fwi4771tu.2017%2Fedit%2Fmaster%2FFinal-project%2Fheat-equation.md&amp;namespace_key=1323269">Fork</a>
+<button class="js-cancel-fork-suggestion btn btn-grouped" type="button">
+Cancel
+</button>
+</div>
+<script>
+  PathLocks.init(
+    '/mmoelle1/wi4771tu.2017/path_locks/toggle',
+    'Final-project/heat-equation.md'
+  );
+</script>
+
+<div class="file-content wiki">
+<h1 dir="auto">&#x000A;<a id="user-content-assignment-heat-equation" class="anchor" href="#assignment-heat-equation" aria-hidden="true"></a>Assignment: Heat equation</h1>&#x000A;&#x000A;<p dir="auto">In this assignment you are going to create a numerical solver for the <a href="https://en.wikipedia.org/wiki/Heat_equation" rel="nofollow noreferrer" target="_blank">heat&#x000A;equation</a> in an arbitrary number of dimensions.</p>&#x000A;&#x000A;<h2 dir="auto">&#x000A;<a id="user-content-introduction" class="anchor" href="#introduction" aria-hidden="true"></a>Introduction</h2>&#x000A;&#x000A;<p dir="auto">Consider the following initial boundary value problem:</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight math js-render-math" lang="math" v-pre="true" data-math-style="display"><code><span id="LC1" class="line" lang="math">\frac{\partial u}{\partial t}-\alpha\Delta u = 0 \quad \text{on }\Omega,</span></code></pre>&#x000A;<pre class="code highlight js-syntax-highlight math js-render-math" lang="math" v-pre="true" data-math-style="display"><code><span id="LC1" class="line" lang="math">u(\vec{x},t)=0 \quad \forall \vec{x}\in\partial\Omega,</span></code></pre>&#x000A;<pre class="code highlight js-syntax-highlight math js-render-math" lang="math" v-pre="true" data-math-style="display"><code><span id="LC1" class="line" lang="math">u(\vec{x},0)=\prod_{k=0}^{n-1}\sin(\pi x_k)\quad \forall \vec{x}\in\Omega</span></code></pre>&#x000A;<p dir="auto">where <code class="code math js-render-math" data-math-style="inline">n</code> is the number of dimensions of the domain, <code class="code math js-render-math" data-math-style="inline">\Omega = [0,1]^n</code> is the domain&#x000A;(the unit square in 2D or the unit cube in 3D), <code class="code math js-render-math" data-math-style="inline">\partial\Omega</code> is the boundary of the&#x000A;domain, <code class="code math js-render-math" data-math-style="inline">u</code> is the temperature as a function of space <code class="code math js-render-math" data-math-style="inline">\vec{x} \in \mathbb{R}^n</code> and time <code class="code math js-render-math" data-math-style="inline">t</code> and&#x000A;<code class="code math js-render-math" data-math-style="inline">\Delta</code> is the <a href="https://en.wikipedia.org/wiki/Laplace_operator" rel="nofollow noreferrer" target="_blank">Laplace operator</a>, in an <code class="code math js-render-math" data-math-style="inline">n</code>-dimensional space given by</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight math js-render-math" lang="math" v-pre="true" data-math-style="display"><code><span id="LC1" class="line" lang="math">\Delta := \sum_{k=0}^{n-1}\frac{\partial^2}{\partial x_k^2}</span></code></pre>&#x000A;<p dir="auto">The exact solution to above initial boundary value problem is given by</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight math js-render-math" lang="math" v-pre="true" data-math-style="display"><code><span id="LC1" class="line" lang="math">u(\vec{x},t)=e^{-n\pi^2\alpha t}\prod_{k=0}^{n-1}\sin(\pi x_k)=e^{-n\pi^2\alpha t}u(x,0)</span></code></pre>&#x000A;<p dir="auto">We are going to apply a finite difference discretisation. We create a mesh of&#x000A;<code class="code math js-render-math" data-math-style="inline">m^n</code> equidistant interior nodes, <code class="code math js-render-math" data-math-style="inline">m</code> nodes per dimension, hence the distance&#x000A;between two nodes is <code class="code math js-render-math" data-math-style="inline">\Delta x = 1/(m+1)</code>.  All nodes are labeled from <code class="code math js-render-math" data-math-style="inline">0</code> to <code class="code math js-render-math" data-math-style="inline">m^n</code>&#x000A;(excluding) such that node <code class="code math js-render-math" data-math-style="inline">j+1</code> is the neighbour of node <code class="code math js-render-math" data-math-style="inline">j</code> in dimension <code class="code math js-render-math" data-math-style="inline">0</code>,&#x000A;node <code class="code math js-render-math" data-math-style="inline">j+m</code> is the neighbour of node <code class="code math js-render-math" data-math-style="inline">j</code> in dimension <code class="code math js-render-math" data-math-style="inline">1</code>, and in general, node&#x000A;<code class="code math js-render-math" data-math-style="inline">j+m^k</code> is the neighbour of node <code class="code math js-render-math" data-math-style="inline">j</code> in dimension <code class="code math js-render-math" data-math-style="inline">k</code>.  The following&#x000A;illustrates a two-dimensional mesh with <code class="code math js-render-math" data-math-style="inline">m=3</code>:</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight plaintext" lang="plaintext" v-pre="true"><code><span id="LC1" class="line" lang="plaintext">x</span>&#x000A;<span id="LC2" class="line" lang="plaintext"> 1</span>&#x000A;<span id="LC3" class="line" lang="plaintext">↑</span>&#x000A;<span id="LC4" class="line" lang="plaintext"></span>&#x000A;<span id="LC5" class="line" lang="plaintext">1    ┏━━━━┯━━━━┯━━━━┯━━━━┓</span>&#x000A;<span id="LC6" class="line" lang="plaintext">     ┃    │    │    │    ┃</span>&#x000A;<span id="LC7" class="line" lang="plaintext">     ┃    │    │    │    ┃</span>&#x000A;<span id="LC8" class="line" lang="plaintext">0.75 ┠────6────7────8────┨</span>&#x000A;<span id="LC9" class="line" lang="plaintext">     ┃    │    │    │    ┃</span>&#x000A;<span id="LC10" class="line" lang="plaintext">     ┃    │    │    │    ┃</span>&#x000A;<span id="LC11" class="line" lang="plaintext">0.5  ┠────3────4────5────┨</span>&#x000A;<span id="LC12" class="line" lang="plaintext">     ┃    │    │    │    ┃</span>&#x000A;<span id="LC13" class="line" lang="plaintext">     ┃    │    │    │    ┃</span>&#x000A;<span id="LC14" class="line" lang="plaintext">0.25 ┠────0────1────2────┨</span>&#x000A;<span id="LC15" class="line" lang="plaintext">     ┃    │    │    │    ┃</span>&#x000A;<span id="LC16" class="line" lang="plaintext">     ┃    │    │    │    ┃</span>&#x000A;<span id="LC17" class="line" lang="plaintext">0    ┗━━━━┷━━━━┷━━━━┷━━━━┛</span>&#x000A;<span id="LC18" class="line" lang="plaintext">     0   0.25 0.5  0.75  1  → x</span>&#x000A;<span id="LC19" class="line" lang="plaintext">                               0</span></code></pre>&#x000A;<p dir="auto">Approximating the <a href="https://en.wikipedia.org/wiki/Laplace_operator" rel="nofollow noreferrer" target="_blank">Laplace operator</a> with a second order central <a href="https://en.wikipedia.org/wiki/Finite_difference" rel="nofollow noreferrer" target="_blank">finite&#x000A;difference</a> discretisation and the remaining semi-discrete differential equation&#x000A;with the <a href="https://en.wikipedia.org/wiki/Backward_Euler_method" rel="nofollow noreferrer" target="_blank">Backward Euler method</a> gives the following system of equations</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight math js-render-math" lang="math" v-pre="true" data-math-style="display"><code><span id="LC1" class="line" lang="math">Mw_{l+1}=w_l</span></code></pre>&#x000A;<p dir="auto">where vector <code class="code math js-render-math" data-math-style="inline">w_l \in\mathbb{R}^{m^n}</code> is the discrete approximation of the heat <code class="code math js-render-math" data-math-style="inline">u</code> at time&#x000A;<code class="code math js-render-math" data-math-style="inline">t=l \Delta t</code>, with vector component <code class="code math js-render-math" data-math-style="inline">i</code> refering to node <code class="code math js-render-math" data-math-style="inline">i</code>.  The matrix <code class="code math js-render-math" data-math-style="inline">M</code> is&#x000A;given by</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight math js-render-math" lang="math" v-pre="true" data-math-style="display"><code><span id="LC1" class="line" lang="math">M_{ij} = I_{ij}-\alpha\frac{\Delta t}{\Delta x^2}\sum_{k=0}^{n-1}D_{kij}\quad\forall i,j \in \{ 0,1,...,m^n\}</span></code></pre>&#x000A;<p dir="auto">where <code class="code math js-render-math" data-math-style="inline">I</code> is the identity matrix and <code class="code math js-render-math" data-math-style="inline">D_k</code> is the discrete approximation of the&#x000A;second order derivative in dimension <code class="code math js-render-math" data-math-style="inline">k \in \{0,1,...,n-1\}</code>:</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight math js-render-math" lang="math" v-pre="true" data-math-style="display"><code><span id="LC1" class="line" lang="math">D_{kij}=-2\quad \text{if } j=i</span></code></pre>&#x000A;<pre class="code highlight js-syntax-highlight math js-render-math" lang="math" v-pre="true" data-math-style="display"><code><span id="LC1" class="line" lang="math">D_{kij}=1\quad \text{if } j \text{ is a left neighbour of } i \text{ in dimension }k</span></code></pre>&#x000A;<pre class="code highlight js-syntax-highlight math js-render-math" lang="math" v-pre="true" data-math-style="display"><code><span id="LC1" class="line" lang="math">D_{kij}=1\quad \text{if } j \text{ is a right neighbour of } i \text{ in dimension }k</span></code></pre>&#x000A;<p dir="auto"><strong>Note:</strong> Not all nodes have left or right neighbours in every dimension.  In&#x000A;the example mesh given above node <code class="code math js-render-math" data-math-style="inline">0</code> has only right neighbours: node <code class="code math js-render-math" data-math-style="inline">1</code> in&#x000A;dimension <code class="code math js-render-math" data-math-style="inline">0</code> and node <code class="code math js-render-math" data-math-style="inline">3</code> in dimension <code class="code math js-render-math" data-math-style="inline">1</code>.  Node <code class="code math js-render-math" data-math-style="inline">5</code> has two left&#x000A;neighbours (node <code class="code math js-render-math" data-math-style="inline">4</code> in dimension <code class="code math js-render-math" data-math-style="inline">0</code> and node <code class="code math js-render-math" data-math-style="inline">2</code> in dimension <code class="code math js-render-math" data-math-style="inline">1</code>), but only&#x000A;one right neighbour: node <code class="code math js-render-math" data-math-style="inline">8</code> in dimension <code class="code math js-render-math" data-math-style="inline">1</code>.</p>&#x000A;&#x000A;<p dir="auto">Given a diffusion coefficient <code class="code math js-render-math" data-math-style="inline">\alpha</code>, a time step size <code class="code math js-render-math" data-math-style="inline">\Delta t</code> and a number of points&#x000A;<code class="code math js-render-math" data-math-style="inline">m</code> the following prodedure can be used to obtain the numerical solution at time&#x000A;<code class="code math js-render-math" data-math-style="inline">t</code>, which should be a multiple of <code class="code math js-render-math" data-math-style="inline">\Delta t</code>:</p>&#x000A;&#x000A;<ol dir="auto">&#x000A;<li>&#x000A;<p>Create the initial solution vector <code>w_0</code> by sampling the initial condition&#x000A;<code class="code math js-render-math" data-math-style="inline">u(\vec{x},0)</code> at the interior nodes:</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight math js-render-math" lang="math" v-pre="true" data-math-style="display"><code><span id="LC1" class="line" lang="math">w_{0i} = w(x_i,0).</span></code></pre>&#x000A;</li>&#x000A;<li>&#x000A;<p>For <code class="code math js-render-math" data-math-style="inline">l = 0,1,..., (t/\Delta t)-1</code>: solve the following linear problem for&#x000A;<code class="code math js-render-math" data-math-style="inline">w_{l+1}</code>:</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight math js-render-math" lang="math" v-pre="true" data-math-style="display"><code><span id="LC1" class="line" lang="math">M w_{l+1} = w_l.</span></code></pre>&#x000A;</li>&#x000A;</ol>&#x000A;&#x000A;<h2 dir="auto">&#x000A;<a id="user-content-part-1-vector-class" class="anchor" href="#part-1-vector-class" aria-hidden="true"></a>Part 1: Vector class</h2>&#x000A;&#x000A;<p dir="auto">Create a <code>template&lt;typename T&gt; class Vector</code> class with the following&#x000A;functionality:</p>&#x000A;&#x000A;<ul dir="auto">&#x000A;<li><p>The element type of the <code>Vector</code> class is specified via a template&#x000A;parameter <code>T</code>.</p></li>&#x000A;<li>&#x000A;<p>The <code>Vector</code> class can be constructed in the following ways:</p>&#x000A;&#x000A;<ul>&#x000A;<li>  a default constructor that sets the length to zero,</li>&#x000A;<li>  a constructor that takes a length as an argument,</li>&#x000A;<li>  a constructor that takes another <code>Vector</code> as an argument and copies the&#x000A;elements of the argument to this <code>Vector</code> and</li>&#x000A;<li>  a constructor that takes an initialiser list representing the contents&#x000A;of this <code>Vector</code>.</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li>&#x000A;<p>The <code>Vector</code> supports the copy and move assignment operators.  It is&#x000A;allowed to change the length of the <code>Vector</code> upon assignment, e.g. given&#x000A;two <code>Vector</code>s <code>a</code> and <code>b</code>,</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight plaintext" lang="plaintext" v-pre="true"><code><span id="LC1" class="line" lang="plaintext">Vector&lt;int&gt; a(5);</span>&#x000A;<span id="LC2" class="line" lang="plaintext">Vector&lt;int&gt; b = { 1, 2, 3, 4 };</span></code></pre>&#x000A;<p>the following should be valid</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight plaintext" lang="plaintext" v-pre="true"><code><span id="LC1" class="line" lang="plaintext">a = b;</span></code></pre>&#x000A;</li>&#x000A;<li><p>The <code>Vector</code> class supports a pointwise sum and difference with another&#x000A;<code>Vector</code> via the binary operators <code>+</code> and <code>-</code>, respectively.  The element&#x000A;type of the resulting <code>Vector</code> is equal to the type of the pointwise&#x000A;operation.  If the <code>Vector</code>s have different lengths an exception should be&#x000A;thrown.</p></li>&#x000A;<li><p>The <code>Vector</code> class supports left and right multiplication with a scalar.&#x000A;The element type of the resuling <code>Vector</code> is equal to the type of the&#x000A;pointwise multiplication.</p></li>&#x000A;</ul>&#x000A;&#x000A;<p dir="auto">Create a function <code>dot</code> that computes the <a href="https://en.wikipedia.org/wiki/Dot_product" rel="nofollow noreferrer" target="_blank">inner product</a> of two vectors.  The&#x000A;function has the following signature:</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight plaintext" lang="plaintext" v-pre="true"><code><span id="LC1" class="line" lang="plaintext">template&lt;typename T&gt;</span>&#x000A;<span id="LC2" class="line" lang="plaintext">T dot(const Vector&lt;T&gt;&amp; l, const Vector&lt;T&gt;&amp; r)</span>&#x000A;<span id="LC3" class="line" lang="plaintext">{</span>&#x000A;<span id="LC4" class="line" lang="plaintext">    ...</span>&#x000A;<span id="LC5" class="line" lang="plaintext">}</span></code></pre>&#x000A;<h2 dir="auto">&#x000A;<a id="user-content-part-2-matrix-classes" class="anchor" href="#part-2-matrix-classes" aria-hidden="true"></a>Part 2: Matrix classes</h2>&#x000A;&#x000A;<p dir="auto">Implement a <code>template&lt;typename T&gt; Matrix</code> class template that represents a&#x000A;sparse matrix.  The <code>Matrix</code> class has the following properties:</p>&#x000A;&#x000A;<ul dir="auto">&#x000A;<li>&#x000A;<p>The shape of the <code>Matrix</code> can be passed via a constructor.</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight plaintext" lang="plaintext" v-pre="true"><code><span id="LC1" class="line" lang="plaintext">Matrix&lt;double&gt; M(10, 20); // initialise M with 10 rows and 20 columns</span></code></pre>&#x000A;<p>It is not allowed to change the shape afterwards.</p>&#x000A;</li>&#x000A;<li>&#x000A;<p>Entries can be added in the following way:</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight plaintext" lang="plaintext" v-pre="true"><code><span id="LC1" class="line" lang="plaintext">Matrix&lt;double&gt; M(10, 10)</span>&#x000A;<span id="LC2" class="line" lang="plaintext">M[{0,0}] = 1.0; // set value at row 0, column 0 to 1.0</span>&#x000A;<span id="LC3" class="line" lang="plaintext">M[{1,2}] = 2.0; // set value at row 1, column 2 to 2.0</span></code></pre>&#x000A;</li>&#x000A;<li><p>The <code>Matrix</code> class has a <code>matvec</code> method that computes and returns the&#x000A;matrix-vector product with some vector.</p></li>&#x000A;</ul>&#x000A;&#x000A;<p dir="auto"><strong>Hint:</strong> You might want to use the <code>map</code> class template from the C++ standard&#x000A;library, which provides an elegant way to handle arbitrary data (e.g., the&#x000A;matrix entries) with a unique key value (e.g., the row/column position), and&#x000A;use <code>array&lt;int, 2&gt;</code> as the map key type.</p>&#x000A;&#x000A;<h2 dir="auto">&#x000A;<a id="user-content-part-3-conjugate-gradient-method" class="anchor" href="#part-3-conjugate-gradient-method" aria-hidden="true"></a>Part 3: Conjugate Gradient method</h2>&#x000A;&#x000A;<p dir="auto">Create a function named <code>cg</code> that solves a linear system using the <a href="https://en.wikipedia.org/wiki/Conjugate_gradient_method" rel="nofollow noreferrer" target="_blank">Conjugate&#x000A;Gradient method</a>, given in pseudocode by</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight plaintext" lang="plaintext" v-pre="true"><code><span id="LC1" class="line" lang="plaintext">p_0 = r_0 = b - A x_0</span>&#x000A;<span id="LC2" class="line" lang="plaintext">for k = 0, 1, ..., maxiter-1</span>&#x000A;<span id="LC3" class="line" lang="plaintext">    alpha_k = dot(r_k, r_k) / dot(A p_k, p_k)</span>&#x000A;<span id="LC4" class="line" lang="plaintext">    x_(k+1) = x_k + alpha_k p</span>&#x000A;<span id="LC5" class="line" lang="plaintext">    r_(k+1) = r_k - alpha_k A p</span>&#x000A;<span id="LC6" class="line" lang="plaintext">    if dot(r_(k+1), r_(k+1)) &lt; tol*tol</span>&#x000A;<span id="LC7" class="line" lang="plaintext">        stop</span>&#x000A;<span id="LC8" class="line" lang="plaintext">    beta_k = dot(r_(k+1), r_(k+1)) / dot(r_k, r_k)</span>&#x000A;<span id="LC9" class="line" lang="plaintext">    p_(k+1) = r_(k+1) + beta_k p_k</span></code></pre>&#x000A;<p dir="auto">Here, <code>A</code> is a symmetric positive definite matrix, <code>x_k</code>, <code>r_k</code> and <code>p_k</code> are&#x000A;vectors, <code>dot</code> is the standard l2-inner product, <code>tol</code> is an absolute tolerance&#x000A;for the residual and <code>maxiter</code> is the maximum allowed number of iterations.</p>&#x000A;&#x000A;<p dir="auto">The <code>cg</code> function should have the following signature</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight plaintext" lang="plaintext" v-pre="true"><code><span id="LC1" class="line" lang="plaintext">template&lt;typename T&gt;</span>&#x000A;<span id="LC2" class="line" lang="plaintext">int cg(</span>&#x000A;<span id="LC3" class="line" lang="plaintext">    const Matrix&lt;T&gt; &amp;A, const Vector&lt;T&gt; &amp;b, Vector&lt;T&gt; &amp;x, T tol, I maxiter)</span>&#x000A;<span id="LC4" class="line" lang="plaintext">{</span>&#x000A;<span id="LC5" class="line" lang="plaintext">    ...</span>&#x000A;<span id="LC6" class="line" lang="plaintext">}</span></code></pre>&#x000A;<p dir="auto">The third argument serves both as the initial guess (<code>x_0</code> in the pseudocode)&#x000A;and as the result (<code>x_k+1</code> in the pseudocode, where <code>k</code> is the last iteration).&#x000A;The function should return the number of iterations used to achieve the desired&#x000A;tolerance if the Conjugate Gradient method converged within <code>maxiter</code>,&#x000A;otherwise <code>-1</code>.</p>&#x000A;&#x000A;<h2 dir="auto">&#x000A;<a id="user-content-part-4-finite-difference-discretisation-of-the-heat-equation" class="anchor" href="#part-4-finite-difference-discretisation-of-the-heat-equation" aria-hidden="true"></a>Part 4: Finite difference discretisation of the heat equation</h2>&#x000A;&#x000A;<p dir="auto">Create a <code>class Heat1D</code> solver that represents the 1D initial boundary value&#x000A;problem given above and has the following functionality:</p>&#x000A;&#x000A;<ul dir="auto">&#x000A;<li><p>The constructor should take three arguments: the diffusion coefficient&#x000A;<code>alpha</code>, the number of points per dimension <code>m</code> and the timestep <code>dt</code>.  The&#x000A;constructor should create the iteration matrix <code>M</code> given in the introduction&#x000A;and store the result as an attribute with type <code>Matrix&lt;double&gt;</code>.</p></li>&#x000A;<li><p>The class has a method <code>Vector&lt;double&gt; exact(double t) const</code> that returns&#x000A;the exact solution at time <code>t</code> evaluated at all interior grid points.</p></li>&#x000A;<li><p>The class has a method <code>Vector&lt;double&gt; solve(double t_end) const</code> that&#x000A;solves the initial boundary value problem given in the introduction using&#x000A;the procedure given at the end of the introduction until <code>t_end</code> and returns&#x000A;the numerical solution at the last time step.</p></li>&#x000A;</ul>&#x000A;&#x000A;<p dir="auto">Test your implementation by creating a solver with diffusion coefficient&#x000A;<code>alpha=0.3125</code>, time step <code>dt=0.001</code> and <code>m=99</code>, solve the problem until <code>t=1</code>&#x000A;and compare the numerical solution with the exact solution.  To verify the&#x000A;matrix <code>M</code>, set <code>alpha=0.3125</code>, <code>dt=0.1</code>, <code>m=3</code> and compare with</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight plaintext" lang="plaintext" v-pre="true"><code><span id="LC1" class="line" lang="plaintext">[ 2.0 -0.5     ]</span>&#x000A;<span id="LC2" class="line" lang="plaintext">[-0.5  2.0 -0.5]</span>&#x000A;<span id="LC3" class="line" lang="plaintext">[     -0.5  2.0]</span></code></pre>&#x000A;<p dir="auto">All zero entries have been left out.</p>&#x000A;&#x000A;<p dir="auto">Create a <code>class Heat2D</code> solver that represents the 2D initial boundary value&#x000A;problem given above with the same functionality as <code>Heat1D</code>.  Test your&#x000A;implementation by creating a solver with diffusion coefficient <code>alpha=0.3125</code>,&#x000A;time step <code>dt=0.001</code> and <code>m=99</code>, solve the problem until <code>t=0.5</code> and compare&#x000A;the numerical solution with the exact solution.  To verify the matrix <code>M</code>, set&#x000A;<code>alpha=0.3125</code>, <code>dt=0.1</code>, <code>m=3</code> and compare with</p>&#x000A;&#x000A;<pre class="code highlight js-syntax-highlight plaintext" lang="plaintext" v-pre="true"><code><span id="LC1" class="line" lang="plaintext">[ 3.0 -0.5      -0.5                         ]</span>&#x000A;<span id="LC2" class="line" lang="plaintext">[-0.5  3.0 -0.5      -0.5                    ]</span>&#x000A;<span id="LC3" class="line" lang="plaintext">[     -0.5  3.0           -0.5               ]</span>&#x000A;<span id="LC4" class="line" lang="plaintext">[-0.5            3.0 -0.5      -0.5          ]</span>&#x000A;<span id="LC5" class="line" lang="plaintext">[     -0.5      -0.5  3.0 -0.5      -0.5     ]</span>&#x000A;<span id="LC6" class="line" lang="plaintext">[          -0.5      -0.5  3.0           -0.5]</span>&#x000A;<span id="LC7" class="line" lang="plaintext">[               -0.5            3.0 -0.5     ]</span>&#x000A;<span id="LC8" class="line" lang="plaintext">[                    -0.5      -0.5  3.0 -0.5]</span>&#x000A;<span id="LC9" class="line" lang="plaintext">[                         -0.5      -0.5  3.0]</span></code></pre>&#x000A;<p dir="auto">If there is enough time create a <code>template&lt;int n&gt; class Heat</code> with the same&#x000A;functionality as the <code>Heat1D</code> and <code>Heat2D</code> classes.  The template parameter <code>n</code>&#x000A;specifies the number of dimensions of the problem.  Test your implementation for&#x000A;one, two and three dimensions.</p>
+</div>
+
+</article>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
+
