@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/osboxes/wi4771tu.2017/WI4771_Final/src/heatEqnSolver.cxx" "/home/osboxes/wi4771tu.2017/WI4771_Final/CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o"
+  "/home/osboxes/WI4771_Final/src/heatEqnSolver.cxx" "/home/osboxes/WI4771_Final/CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
