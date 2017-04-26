@@ -156,6 +156,39 @@ public:
     
 };
 
+template<typename T>
+class Matrix {
+
+private:
+    T* data;
+    const int row;
+    const int col;
+    
+public:
+    // Default constructor
+    Matrix()
+    : data(nullptr), row(0), col(0) 
+    {
+        std::cout << "Constructor 1" << std::endl;
+        }
+    
+    // Constructor (sets length and allocates data)
+    Matrix(const int r, const int c)
+    : data(new T[r*c]), row(r), col(c)
+    {
+        std::cout << "Constructor 1" << std::endl;
+        }
+    
+};
+/*
+template<typename T>
+// Constructor (sets length and allocates data)
+    Matrix<T>::Matrix(const int r, const int c)
+    : data(new T[r][c]), row(r), col(3)
+    {
+        std::cout << "Constructor 1" << std::endl;
+        }*/
+    
 // The global main function that is the designated start of the program
 int main(){
 
@@ -176,6 +209,9 @@ int main(){
     v2.print("v2");
     v1.print("v1");
     std::cout << dot(v1,v2) << std::endl;
+    
+    Matrix<double> m1;
+    Matrix<double> m2(10,20);
 
     return 0;
 }
