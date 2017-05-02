@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/osboxes/WI4771_Final/src/heatEqnSolver.cxx" "/home/osboxes/WI4771_Final/CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o"
-  "/home/osboxes/WI4771_Final/src/sparseMatrix.cpp" "/home/osboxes/WI4771_Final/CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o"
+  "/home/osboxes/WI4771_Final/src/sparseMatrix.cpp" "/home/osboxes/WI4771_Final/CMakeFiles/sparseMatrix.dir/src/sparseMatrix.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

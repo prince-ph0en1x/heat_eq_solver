@@ -10,24 +10,6 @@
 exception
 -
 
-/home/osboxes/WI4771_Final/src/heatEqnSolver.cxx
-iostream
--
-initializer_list
--
-memory
--
-complex
--
-assert.h
--
-math.h
--
-sparseMatrix.h
-/home/osboxes/WI4771_Final/src/sparseMatrix.h
-sparseMatrix.cpp
-/home/osboxes/WI4771_Final/src/sparseMatrix.cpp
-
 /home/osboxes/WI4771_Final/src/sparseMatrix.cpp
 vector
 -

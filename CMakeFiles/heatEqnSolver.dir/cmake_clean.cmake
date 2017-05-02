@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o"
+  "CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o"
   "heatEqnSolver.pdb"
   "heatEqnSolver"
 )

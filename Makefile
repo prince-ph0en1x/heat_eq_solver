@@ -150,6 +150,33 @@ src/heatEqnSolver.cxx.s:
 	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.s
 .PHONY : src/heatEqnSolver.cxx.s
 
+src/sparseMatrix.o: src/sparseMatrix.cpp.o
+
+.PHONY : src/sparseMatrix.o
+
+# target to build an object file
+src/sparseMatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o
+.PHONY : src/sparseMatrix.cpp.o
+
+src/sparseMatrix.i: src/sparseMatrix.cpp.i
+
+.PHONY : src/sparseMatrix.i
+
+# target to preprocess a source file
+src/sparseMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.i
+.PHONY : src/sparseMatrix.cpp.i
+
+src/sparseMatrix.s: src/sparseMatrix.cpp.s
+
+.PHONY : src/sparseMatrix.s
+
+# target to generate assembly for a file
+src/sparseMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.s
+.PHONY : src/sparseMatrix.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... src/heatEqnSolver.o"
 	@echo "... src/heatEqnSolver.i"
 	@echo "... src/heatEqnSolver.s"
+	@echo "... src/sparseMatrix.o"
+	@echo "... src/sparseMatrix.i"
+	@echo "... src/sparseMatrix.s"
 .PHONY : help
 
 
