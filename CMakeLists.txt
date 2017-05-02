@@ -5,7 +5,7 @@ cmake_minimum_required (VERSION 3.1)
 project (WI4771_Final)
 
 # Create an executable named 'heatEqnSolver' from the source file 'heatEqnSolver.cxx'
-set(HEADER_FILES src/sparseMatrix.cpp src/sparseMatrix.h)
+set(HEADER_FILES src/part1.cpp src/sparseMatrix.cpp src/part3.cpp src/part4.cpp)
 add_executable(heatEqnSolver src/heatEqnSolver.cxx ${HEADER_FILES})
 target_compile_features(heatEqnSolver PRIVATE cxx_auto_type)
 

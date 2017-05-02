@@ -81,9 +81,33 @@ CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o.provides: CMakeFiles/heatEq
 CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o.provides.build: CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o
 
 
+CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o: CMakeFiles/heatEqnSolver.dir/flags.make
+CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o: src/part1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/WI4771_Final/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o -c /home/osboxes/WI4771_Final/src/part1.cpp
+
+CMakeFiles/heatEqnSolver.dir/src/part1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/heatEqnSolver.dir/src/part1.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/osboxes/WI4771_Final/src/part1.cpp > CMakeFiles/heatEqnSolver.dir/src/part1.cpp.i
+
+CMakeFiles/heatEqnSolver.dir/src/part1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/heatEqnSolver.dir/src/part1.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/osboxes/WI4771_Final/src/part1.cpp -o CMakeFiles/heatEqnSolver.dir/src/part1.cpp.s
+
+CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o.requires:
+
+.PHONY : CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o.requires
+
+CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o.provides: CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o.provides.build
+.PHONY : CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o.provides
+
+CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o.provides.build: CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o
+
+
 CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o: CMakeFiles/heatEqnSolver.dir/flags.make
 CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o: src/sparseMatrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/WI4771_Final/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/WI4771_Final/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o -c /home/osboxes/WI4771_Final/src/sparseMatrix.cpp
 
 CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.i: cmake_force
@@ -105,19 +129,73 @@ CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o.provides: CMakeFiles/heatEqn
 CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o.provides.build: CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o
 
 
+CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o: CMakeFiles/heatEqnSolver.dir/flags.make
+CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o: src/part3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/WI4771_Final/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o -c /home/osboxes/WI4771_Final/src/part3.cpp
+
+CMakeFiles/heatEqnSolver.dir/src/part3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/heatEqnSolver.dir/src/part3.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/osboxes/WI4771_Final/src/part3.cpp > CMakeFiles/heatEqnSolver.dir/src/part3.cpp.i
+
+CMakeFiles/heatEqnSolver.dir/src/part3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/heatEqnSolver.dir/src/part3.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/osboxes/WI4771_Final/src/part3.cpp -o CMakeFiles/heatEqnSolver.dir/src/part3.cpp.s
+
+CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o.requires:
+
+.PHONY : CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o.requires
+
+CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o.provides: CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o.requires
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o.provides.build
+.PHONY : CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o.provides
+
+CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o.provides.build: CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o
+
+
+CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o: CMakeFiles/heatEqnSolver.dir/flags.make
+CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o: src/part4.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osboxes/WI4771_Final/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o -c /home/osboxes/WI4771_Final/src/part4.cpp
+
+CMakeFiles/heatEqnSolver.dir/src/part4.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/heatEqnSolver.dir/src/part4.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/osboxes/WI4771_Final/src/part4.cpp > CMakeFiles/heatEqnSolver.dir/src/part4.cpp.i
+
+CMakeFiles/heatEqnSolver.dir/src/part4.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/heatEqnSolver.dir/src/part4.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/osboxes/WI4771_Final/src/part4.cpp -o CMakeFiles/heatEqnSolver.dir/src/part4.cpp.s
+
+CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o.requires:
+
+.PHONY : CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o.requires
+
+CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o.provides: CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o.requires
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o.provides.build
+.PHONY : CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o.provides
+
+CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o.provides.build: CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o
+
+
 # Object files for target heatEqnSolver
 heatEqnSolver_OBJECTS = \
 "CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o" \
-"CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o"
+"CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o" \
+"CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o" \
+"CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o" \
+"CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o"
 
 # External object files for target heatEqnSolver
 heatEqnSolver_EXTERNAL_OBJECTS =
 
 heatEqnSolver: CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o
+heatEqnSolver: CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o
 heatEqnSolver: CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o
+heatEqnSolver: CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o
+heatEqnSolver: CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o
 heatEqnSolver: CMakeFiles/heatEqnSolver.dir/build.make
 heatEqnSolver: CMakeFiles/heatEqnSolver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/osboxes/WI4771_Final/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable heatEqnSolver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/osboxes/WI4771_Final/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable heatEqnSolver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/heatEqnSolver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,7 +204,10 @@ CMakeFiles/heatEqnSolver.dir/build: heatEqnSolver
 .PHONY : CMakeFiles/heatEqnSolver.dir/build
 
 CMakeFiles/heatEqnSolver.dir/requires: CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o.requires
+CMakeFiles/heatEqnSolver.dir/requires: CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o.requires
 CMakeFiles/heatEqnSolver.dir/requires: CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o.requires
+CMakeFiles/heatEqnSolver.dir/requires: CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o.requires
+CMakeFiles/heatEqnSolver.dir/requires: CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o.requires
 
 .PHONY : CMakeFiles/heatEqnSolver.dir/requires
 

@@ -150,6 +150,87 @@ src/heatEqnSolver.cxx.s:
 	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.s
 .PHONY : src/heatEqnSolver.cxx.s
 
+src/part1.o: src/part1.cpp.o
+
+.PHONY : src/part1.o
+
+# target to build an object file
+src/part1.cpp.o:
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o
+.PHONY : src/part1.cpp.o
+
+src/part1.i: src/part1.cpp.i
+
+.PHONY : src/part1.i
+
+# target to preprocess a source file
+src/part1.cpp.i:
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/part1.cpp.i
+.PHONY : src/part1.cpp.i
+
+src/part1.s: src/part1.cpp.s
+
+.PHONY : src/part1.s
+
+# target to generate assembly for a file
+src/part1.cpp.s:
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/part1.cpp.s
+.PHONY : src/part1.cpp.s
+
+src/part3.o: src/part3.cpp.o
+
+.PHONY : src/part3.o
+
+# target to build an object file
+src/part3.cpp.o:
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o
+.PHONY : src/part3.cpp.o
+
+src/part3.i: src/part3.cpp.i
+
+.PHONY : src/part3.i
+
+# target to preprocess a source file
+src/part3.cpp.i:
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/part3.cpp.i
+.PHONY : src/part3.cpp.i
+
+src/part3.s: src/part3.cpp.s
+
+.PHONY : src/part3.s
+
+# target to generate assembly for a file
+src/part3.cpp.s:
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/part3.cpp.s
+.PHONY : src/part3.cpp.s
+
+src/part4.o: src/part4.cpp.o
+
+.PHONY : src/part4.o
+
+# target to build an object file
+src/part4.cpp.o:
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o
+.PHONY : src/part4.cpp.o
+
+src/part4.i: src/part4.cpp.i
+
+.PHONY : src/part4.i
+
+# target to preprocess a source file
+src/part4.cpp.i:
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/part4.cpp.i
+.PHONY : src/part4.cpp.i
+
+src/part4.s: src/part4.cpp.s
+
+.PHONY : src/part4.s
+
+# target to generate assembly for a file
+src/part4.cpp.s:
+	$(MAKE) -f CMakeFiles/heatEqnSolver.dir/build.make CMakeFiles/heatEqnSolver.dir/src/part4.cpp.s
+.PHONY : src/part4.cpp.s
+
 src/sparseMatrix.o: src/sparseMatrix.cpp.o
 
 .PHONY : src/sparseMatrix.o
@@ -189,6 +270,15 @@ help:
 	@echo "... src/heatEqnSolver.o"
 	@echo "... src/heatEqnSolver.i"
 	@echo "... src/heatEqnSolver.s"
+	@echo "... src/part1.o"
+	@echo "... src/part1.i"
+	@echo "... src/part1.s"
+	@echo "... src/part3.o"
+	@echo "... src/part3.i"
+	@echo "... src/part3.s"
+	@echo "... src/part4.o"
+	@echo "... src/part4.i"
+	@echo "... src/part4.s"
 	@echo "... src/sparseMatrix.o"
 	@echo "... src/sparseMatrix.i"
 	@echo "... src/sparseMatrix.s"
