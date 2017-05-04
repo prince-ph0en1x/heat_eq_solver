@@ -19,12 +19,13 @@
 	
 
 #include "part1.cpp"
-#include "sparseMatrix.cpp"	// part 2
+//#include "sparseMatrix.cpp"	// part 2
 #include "part3.cpp"
 #include "part4.cpp"
 
 // The global main function that is the designated start of the program
-int main(){
+int main()
+{
 
 	std::cout << "Proj Kickoff 2" << std::endl;
     
@@ -44,14 +45,16 @@ int main(){
 	v1.print("v1");
 	// std::cout << dot(v1,v2) << std::endl;
 	
-	SparseMatrix<int> matrix(4, 5);
-	int val;
-	matrix.set(-5, 2, 3); // sets -5 on 2nd row and 3rd column
-	val = matrix.get(2, 3);
-	cout << val <<endl;
+	//SparseMatrix<int> matrix(4, 5);
+	//int val;
+	//matrix.set(-5, 2, 3); // sets -5 on 2nd row and 3rd column
+	//val = matrix.get(2, 3);
+	//cout << val <<endl;*/
 	
-	 Heat<1> h(0.3125,3,0.1);
-	// Heat<2> h(0.3125,3,0.1);
+	 Heat<1> h1(0.3125,3,0.1);
+	 //std::cout << h.M.get(2,3) << std::endl;
+	 
+	Heat<2> h2(0.3125,3,0.1);
 	
     return 0;
 }

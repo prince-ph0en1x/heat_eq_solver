@@ -13,29 +13,33 @@
 
 #include <math.h>
 
+#include "sparseMatrix.cpp"	// part 2
+
 template <int n> // n-Dimension Boundary Value Problem
 class Heat
 {
-	private:
+	public:
 	
+	SparseMatrix<double> M();
 	// Matrix <double> M;
+	//SparseMatrix<double>* M;
 	
 	public:
 	
 	Heat (double alpha, int m, double dt)
 	{
-		double c = alpha*dt*((m+1)*(m+1));
+		double Mij, c = alpha*dt*((m+1)*(m+1));
 		int Dkij, points = pow(m,n);
-		//std::cout << Dkij << " Hi " << std::endl;
+		SparseMatrix<double> M(points, points);
 		
 		for (auto i = 0; i < points; i++)
 		{
 			for (auto j = 0; j < points; j++)
 			{
-				float MM = 0;		
+				Mij = 0;		
 				if (i == j)
 				{
-					MM += 1 - c*(-2)*n;
+					Mij += 1 - c*(-2)*n;
 				}
 				else
 				{
@@ -44,26 +48,32 @@ class Heat
 					{
 						int jj = j/pow(m,k+1);
 						int ii = i/pow(m,k+1);
-						//std::cout << k << " Hi " << std::endl;
 						
 						if (j == i+pow(m,k) &&  jj == ii) 
 						{
-							//std::cout << " Node : " << i << " < " << j << " in Dim " << k << std::endl;
 							Dkij = 1;
 						}
 						if (j == i-pow(m,k) && jj == ii)
 						{
-							//std::cout << " Node : " << i << " > " << j << " in Dim " << k << std::endl;
 							Dkij = 1;
 						}
 						
 					}
-					MM += -c*Dkij;
+					Mij += -c*Dkij;
 				}
-				std::cout << i << " - " << " - " << MM << std::endl;
+				M.set(Mij, i+1, j+1);
+			}
+		}
+		
+		// Print check
+		for (auto i = 0; i < points; i++)
+		{
+			for (auto j = 0; j < points; j++)
+			{
+				std::cout << M.get(i+1, j+1) << "\t";
 				
 			}
-			
+			std::cout << std::endl;		
 		}
 	
 	

@@ -19,8 +19,6 @@ memory
 -
 part1.cpp
 /home/osboxes/WI4771_Final/src/part1.cpp
-sparseMatrix.cpp
-/home/osboxes/WI4771_Final/src/sparseMatrix.cpp
 part3.cpp
 /home/osboxes/WI4771_Final/src/part3.cpp
 part4.cpp
@@ -45,6 +43,8 @@ iostream
 -
 math.h
 -
+sparseMatrix.cpp
+/home/osboxes/WI4771_Final/src/sparseMatrix.cpp
 
 /home/osboxes/WI4771_Final/src/sparseMatrix.cpp
 vector

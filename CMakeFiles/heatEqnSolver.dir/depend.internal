@@ -14,7 +14,10 @@ CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o
 CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o
  /home/osboxes/WI4771_Final/src/part3.cpp
 CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o
+ /home/osboxes/WI4771_Final/src/exceptions.h
  /home/osboxes/WI4771_Final/src/part4.cpp
+ /home/osboxes/WI4771_Final/src/sparseMatrix.cpp
+ /home/osboxes/WI4771_Final/src/sparseMatrix.h
 CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o
  /home/osboxes/WI4771_Final/src/exceptions.h
  /home/osboxes/WI4771_Final/src/sparseMatrix.cpp
