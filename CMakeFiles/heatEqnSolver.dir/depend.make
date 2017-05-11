@@ -3,20 +3,8 @@
 
 CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o: src/exceptions.h
 CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o: src/heatEqnSolver.cxx
-CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o: src/part1.cpp
-CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o: src/part3.cpp
-CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o: src/part4.cpp
 CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o: src/sparseMatrix.cpp
 CMakeFiles/heatEqnSolver.dir/src/heatEqnSolver.cxx.o: src/sparseMatrix.h
-
-CMakeFiles/heatEqnSolver.dir/src/part1.cpp.o: src/part1.cpp
-
-CMakeFiles/heatEqnSolver.dir/src/part3.cpp.o: src/part3.cpp
-
-CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o: src/exceptions.h
-CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o: src/part4.cpp
-CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o: src/sparseMatrix.cpp
-CMakeFiles/heatEqnSolver.dir/src/part4.cpp.o: src/sparseMatrix.h
 
 CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o: src/exceptions.h
 CMakeFiles/heatEqnSolver.dir/src/sparseMatrix.cpp.o: src/sparseMatrix.cpp

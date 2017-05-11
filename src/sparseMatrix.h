@@ -72,7 +72,7 @@
 			friend ostream & operator << (ostream & os, const SparseMatrix<X> & matrix);
 
 
-		protected:
+		public:
 
 			int m, n;
 
